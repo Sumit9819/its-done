@@ -6,14 +6,13 @@
     <title>Video Player</title>
     <style>
         body { margin: 0; padding: 0; background-color: #000; }
-        video { width: 100vw; height: 100vh; object-fit: contain; }
+        video { width: 100%; height: 100%; object-fit: contain; } /* Changed to 100% for responsiveness */
     </style>
 </head>
 <body>
     <video
-        src="/videos/10036.mp4"
+        src="/videos/10036.mp4" /* Relative is fine here since same domain */
         controls
-        autoplay
         muted
         playsinline>
     </video>
